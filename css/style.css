@@ -87,11 +87,17 @@
         margin-left: auto;
     }
     .nav-poject-link{
-        
+    
         margin-right: 50px;
-        
-       
     }
+
+    .links-link{
+        display: flex;
+        align-items: center;
+    } 
+
+
+
     .nav-poject-link:last-child{
         margin-right: 0;
     }
@@ -175,6 +181,9 @@
             rgba(47, 48, 58, 0.4)), 
             url(../images/Img9.jpg);
             margin: 0 auto; 
+        background-position:50% 50%;
+        background-repeat: no-repeat;
+        background-size:cover;
       
         
          
@@ -257,39 +266,22 @@
         margin-left: 30px;
         
     }
-    .benefits-link::before{
-        display: block;
-        content: '';
-        
+    
+    .benefits-astronaut{
+        width: 270px;
         height: 120px;
         background: #F5F4FA;
         border-radius: 4px;
         margin-bottom: 30px;
-    }
-    .icon-antenna::before{
-        background-image: url(../images/antenna.svg);
-        background-size: 65px 70px;
-        background-repeat: no-repeat;
-        background-position: center;
+       
         
+       
     }
-    .icon-watch::before{
-        background-image: url(../images/clock.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .icon-pc::before{
-        background-image: url(../images/diagram.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    
-    }
-    .icon-space::before{
-        background-image: url(../images/astronaut.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
- 
+    .benefits-astronaut-icon{
+        width: 70px;
+        height: 70px;
+        margin: 25px 100px;
+        }
 
     .benefits-text{
         width: 270px;
@@ -344,8 +336,8 @@
 
         background-color: var(--prymory-white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;  
-           
+        border-radius: 0px 0px 4px 4px; 
+        
     }
    
     
@@ -457,9 +449,16 @@
 
             width: 170px;
             height: 92px;
-            padding: 16px 32px;
+        }
+        .customers-linky{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
             border: 1px solid #AFB1B8;
             border-radius: 4px;
+            
         }
 
 
@@ -470,18 +469,26 @@
 
             
 
-        .customers-link:hover{
+        .customers-linky:hover{
             border: 1px solid var(--accent-color);
         }
         
 
-        .customers-link:hover .customers-icon{
+        .customers-linky:hover .customers-icon{
             fill: var(--accent-color);
         }
 
 
         .customers-link+.customers-link{
             margin-left: 30px;
+        }
+        .customers-linky:focus{
+            border: 1px solid var(--accent-color);
+
+        }
+
+        .customers-linky:focus .customers-icon{
+            fill: var(--accent-color);
         }
       
 
@@ -505,11 +512,11 @@
         
     }
     .footer{
+        align-items: baseline;
         display: flex;
         
     }
     .conteiner-join{
-       padding-top: 12px;
         margin-left: 70px;
     }
     .join-title{
@@ -607,7 +614,10 @@
     .nav-button:hover,
     .nav-button:focus{
         color:var(--prymory-white-color);
-        background-color:var(--accent-color)}
+        background-color:var(--accent-color);
+        box-shadow: 0 2px 2px 0 #000000,0 1px 2px 0 #000000,0 3px 1px 0 #000000;
+        
+     }
     .nav-button.primary{
         color: var(--prymory-white-color); 
         background-color: var(--accent-color);
@@ -650,11 +660,14 @@
             margin-top: 30px;
             margin-left: 30px;                      
             }
-            .bakground-link:hover{
+            .bakground-link-linky{
+                display: block;
+            }
+            .bakground-link-linky:hover{
                 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
             }
-            .bakground-link:focus{
+            .bakground-link-linky:focus{
                 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
             }
